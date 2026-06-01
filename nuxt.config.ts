@@ -15,6 +15,12 @@ export default defineNuxtConfig({
     '/': { prerender: true }
   },
 
+  nitro: {
+    prerender: {
+      crawlLinks: true
+    }
+  },
+
   compatibilityDate: '2025-01-15',
 
   eslint: {
