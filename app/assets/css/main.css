@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Inter', sans-serif;
+}
+
+.toast-enter-active {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.toast-leave-active {
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+.toast-enter-from {
+  opacity: 0;
+  transform: translateY(16px) scale(0.95);
+}
+.toast-leave-to {
+  opacity: 0;
+  transform: translateY(8px) scale(0.97);
+}
